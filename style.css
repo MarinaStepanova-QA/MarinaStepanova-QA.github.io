@@ -1,0 +1,272 @@
+body {
+  font-family: "Helvetica";
+  background-color: #f5f5f5;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin: 20px 0;
+  margin-left: 40px;
+}
+
+.header__avatar {
+  vertical-align: middle;
+  /* border-radius: 50%; */
+    width: 310px;
+    height: 310px;
+    margin-left: -60px;
+};
+
+.header__title  {
+  margin: 30px 0 10px 0;
+  font-size: 50px;
+  line-height: 1.2;
+  font-family: "Helvetica Neue";
+}
+
+.header__subtitle {
+  color: #000000;
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 0;
+  font-family: "Helvetica Neue";
+}
+
+.links {
+  width: 320px;
+  margin-bottom: 40px;
+}
+
+.links__header {
+  font-family: "Helvetica Neue";
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 0 0 15px 0;
+}
+
+.links__container {
+  list-style-type: none;
+  background: #e3b9ff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 20px 10px;
+  gap: 10px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.links__link,
+.links__title {
+  font-size: 14px;
+  font-size: 1.4;
+}
+
+.links__link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 0px 10px;
+  gap: 30px;
+  border-bottom: 1px solid #dadada;
+  width: 280px;
+}
+
+.links__link:last-child {
+  border-bottom: none;
+}
+
+.linsk__link,
+.links__link:visited {
+  text-decoration: none;
+  color: #000000;
+}
+
+.links__title {
+  margin: 0;
+  min-width: 100px;
+}
+
+footer {
+  margin: 0 0 40px 0;
+}
+body {
+  background: url(fon.png);
+}
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: #89AC76;
+  box-shadow: 0 15px 20px #bef3a1;
+  color: white;
+  transform: translateY(-7px);
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  border-radius: 10px;
+  background-color: #89AC76;
+  color: #444;
+  cursor: pointer;
+  padding: 25px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #89AC76;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 200%;
+  left: 50%;
+  margin-left: -200px;
+  /* font-family: "Times New Roman"; */
+  line-height: 1.5
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* кнопки контактов */
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a {
+    text-align: center;
+    
+    width: 58px;
+    height: 58px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 48px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #89AC76;
+}
+.social a i {
+  margin: 13px 0px 0px -1px;
+}
+.github a:hover {background: 
+#191919; color: 
+#fff;}
+.youtube a:hover {background: 
+#c4302b; color: 
+#fff;}
+.google-pluse a:hover {background: 
+#DD4B39; color: 
+#fff;}
+.twitter a:hover {background: 
+#00acee; color: 
+#fff;}
+.instagram a:hover {background: 
+#3f729b; color: 
+#fff;}
+.facebook a:hover {background: 
+#3b5998; color: 
+#fff;}
+.skype a:hover {background: 
+#00aff0; color: 
+#fff;}
+.vk a:hover {background: 
+#5d84ae; color: 
+#fff;}
+.linkedin a:hover {background: 
+#0e76a8; color: 
+#fff;}
+.telegram a:hover {background: 
+#249bd7; color: 
+#fff;}
+
+/* список */
+.zebra {
+  list-style: none;
+  border-left: 10px solid #89AC76;
+  padding: 0;
+  font-family: "Lucida Sans";
+}
+.zebra li {padding: 14px;}
+.zebra li:nth-child(odd) {background: #c5efae;}
+.zebra li:nth-child(even) {background: white;}
+
